@@ -1,0 +1,22 @@
+<!-- clowns_show.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- clown navbar -->
+<div class="nav_container">
+    <button class='header_btn' onclick="location.href='/';">Back</button>
+    <div id="logo" onclick="location.href='/';">Clown Commodities</div>
+    <button class='header_btn' onclick="location.href='/clowns/{{ clown._id }}/edit';">Edit Listing</button>
+    <button type='submit' form='delete_form' class='header_btn'>Delete Listing</button>
+</div>
+
+<div class='clown_container'>
+    <h1 class='clown_name'>{{ clown.name }}</h1>
+    <img class='clown_img' src="{{ clown.image }}" alt="{{ clown.name }}"><br>
+    <p class='clown_desc'>{{ clown.description }}</p>
+</div>
+
+<form method='POST' id='delete_form' action='/clowns/{{clown._id}}/delete'>
+    <input type='hidden' name='_method' value='DELETE'>
+</form>
+{% endblock %}

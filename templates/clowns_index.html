@@ -1,0 +1,21 @@
+<!-- clowns_index.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- index navbar -->
+<div class="nav_container">
+    <div id="logo" onclick="location.href='/';">Clown Commodities</div>
+    <button class='header_btn' onclick="location.href='/clowns/new';">Create Listing</button>
+</div>
+
+{% for clown in clowns %}
+    <div class='clown_container'>
+        <h1 class='clown_name'>{{ clown.name }}</h1>
+        <img class='clown_img' src="{{ clown.image }}" alt="{{ clown.name }}"><br>
+        <p class='clown_desc'>{{ clown.description }}</p>
+        <button class='clown_btn' onclick="location.href='/clowns/{{ clown._id }}';">Details</button>
+        <br>
+    </div>
+
+    {% endfor %}
+{% endblock %}

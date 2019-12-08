@@ -1,0 +1,16 @@
+<!-- clowns_new.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="nav_container">
+    <button class='header_btn' onclick="location.href='/';">Back</button>
+    <div id="logo" onclick="location.href='/';">Clown Commodities</div>
+</div>
+
+<div class='clown_form'>
+    <form method='POST' action='/clowns'>
+        {% include 'partials/clowns_form.html' %}
+        <button type='submit' class='clown_btn' style="margin-left: 0px;">Save Product</button>
+    </form>
+</div>
+{% endblock %}

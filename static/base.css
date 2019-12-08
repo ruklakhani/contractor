@@ -1,0 +1,117 @@
+body {
+  background-image: url("clowns.jpg");
+}
+.form_label{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: pretty;
+    font-size: 24px;
+}
+.form_input{
+    border: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: pretty;
+    margin-bottom: 10px;
+    width: 70%;
+    font-size: 18px;
+}
+.clown_form {
+    border: none;
+    text-align: center;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: pretty;
+    font-size: 18px;
+    background-color: #f7dc40;
+    padding: 25px;
+    border-radius: 5px;
+    color: #4865b8;
+}
+.clown_container {
+    font-family: pretty;
+    text-align: center;
+    background-color: #f7dc40;
+    margin: 0 auto;
+    width: 55%;
+    border-radius: 5px;
+    color: #4865b8;
+    padding-top: 10px;
+    margin-bottom: 25px;
+}
+.clown_btn {
+    margin-bottom: 10px;
+    font-family: pretty;
+    background-color: #4865b8;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    margin-left: 10px;
+}
+.clown_name {
+    margin: 10px;
+    font-size: 36px;
+}
+.clown_desc {
+    font-size: 20px;
+    display: inline-block;
+}
+.clown_img {
+    width: 90%;
+    border-radius: 5px;
+}
+
+.nav_container {
+    width: 60%;
+    padding: 10px;
+    background-color: #f7dc40;
+    margin-bottom: 10px;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+.header_btn {
+    background-color: #4865b8;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    border-radius: 5px;
+    vertical-align: middle;
+    font-size: 24px;
+    border: none;
+    font-family: pretty;
+}
+.header_btn:hover, .clown_btn:hover {
+    cursor: pointer;
+    background-color: #f7dc40;
+    -webkit-animation: rumble .0625s infinite linear;
+}
+#logo {
+    font-family: logo;
+    text-align: center;
+    color: #4865b8;
+    font-size: 72px;
+    margin-right: auto;
+    margin-left: auto;
+    user-select: none;
+}
+#logo:hover {
+    -webkit-animation: rumble .0625s infinite linear;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: logo;
+    src: url('Freakshow.ttf');
+}

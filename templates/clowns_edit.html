@@ -1,0 +1,18 @@
+<!-- clowns_edit.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="nav_container">
+    <button class='header_btn' onclick="location.href='/clowns/{{clown._id}}';">Back</button>
+    <div id="logo" onclick="location.href='/';">Clown Commodities</div>
+</div>
+
+<div class='clown_form'>
+    <form method='POST' action='/clowns/{{clown._id}}'>
+        <input type='hidden' name='_method' value='PUT'/>
+        {% include 'partials/clowns_form.html' %}
+
+        <button type='submit' class='clown_btn' style="margin-left: 0px;">Update Product</button>
+    </form>
+</div>
+{% endblock %}
